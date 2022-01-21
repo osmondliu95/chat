@@ -25,7 +25,7 @@ export default class ChatForm {
 						${__(this.profile.name)}
 						<div class='online-circle'></div>
 					</div>
-					<div class='chat-profile-status'>${__('Typically replies in a few hours')}</div>
+					<div class='chat-profile-status'>${__('一般我们将在2小时内回复您。')}</div>
 				</div>
 			</div>
 		`;
@@ -35,22 +35,22 @@ export default class ChatForm {
   setup_form() {
     const form_html = `
 			<div class='chat-form-container'>
-				<p class='chat-query-heading'>${__('Share your queries or comments here.')}</p>
+				<p class='chat-query-heading'>${__('请分享您的需求和建议。')}</p>
 				<form>
 					<div class='form-group'>
-						<label class='form-label'>${__('Full Name')}</label>
+						<label class='form-label'>${__('姓名')}</label>
 						<input type='text' class='form-control' id='chat-fullname' 
-							placeholder='${__('Please enter your full name')}'>
+							placeholder='${__('请输入姓名')}'>
 					</div>
 					<div class='form-group'>
-						<label class='form-label'>${__('Email Address')}</label>
+						<label class='form-label'>${__('电子邮箱')}</label>
 						<input type='email' class='form-control' id='chat-email' 
-							placeholder='${__('Please enter your email')}'>
+							placeholder='${__('请输入您的电子邮箱')}'>
 					</div>
 					<div class='form-group'>
-						<label class='form-label'>${__('Message')}</label>
+						<label class='form-label'>${__('留言信息')}</label>
 						<textarea class='form-control' id='chat-message-area' 
-							placeholder='${__('Please enter your message')}'></textarea>
+							placeholder='${__('请输入您的留言信息')}'></textarea>
 					</div>
 					<button type='button' class='btn btn-primary w-100'
 						id='submit-form'>
@@ -60,7 +60,7 @@ export default class ChatForm {
 			</div>
 		`;
     const footer_html = `
-      <a class='chat-footer' target='_blank' href='https://frappeframework.com/'>
+      <a class='chat-footer' target='_blank' href='http://e-meta.work/'>
         ${__('⚡ Powered by Frappe')}
       </a>
     `;
