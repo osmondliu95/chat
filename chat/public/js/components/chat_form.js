@@ -54,14 +54,14 @@ export default class ChatForm {
 					</div>
 					<button type='button' class='btn btn-primary w-100'
 						id='submit-form'>
-            ${__('Submit')}
+            ${__('提交')}
           </button>
 				</form>
 			</div>
 		`;
     const footer_html = `
       <a class='chat-footer' target='_blank' href='http://e-meta.work/'>
-        ${__('⚡ Powered by Frappe')}
+        ${__('@e-meta.work')}
       </a>
     `;
     this.$chat_form.append(form_html + footer_html);
