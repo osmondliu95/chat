@@ -7,9 +7,9 @@ export default class ChatBubble {
   setup() {
     this.$chat_bubble = $(document.createElement('div'));
     this.open_title = this.parent.is_admin
-      ? __('Show Chats')
-      : __('Chat With Us');
-    this.closed_title = __('Close Chat');
+      ? __('显示聊天窗口')
+      : __('联系我们');
+    this.closed_title = __('关闭聊天窗口');
 
     const bubble_visible = this.parent.is_desk === true ? 'd-none' : '';
     this.open_inner_html = `
