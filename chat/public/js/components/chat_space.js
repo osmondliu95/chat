@@ -49,7 +49,7 @@ export default class ChatSpace {
 					${__(this.profile.room_name)}
 					<div class='online-circle'></div>
 					</div>
-					<div class='chat-profile-status'>${__('Typing...')}</div>
+					<div class='chat-profile-status'>${__('输入中...')}</div>
 				</div>
 			</div>
 		`;
@@ -68,7 +68,7 @@ export default class ChatSpace {
     } catch (error) {
       frappe.msgprint({
         title: __('Error'),
-        message: __('Something went wrong. Please refresh and try again.'),
+        message: __('出现异常，请刷新页面后重试。'),
       });
     }
   }
@@ -149,7 +149,7 @@ export default class ChatSpace {
 			>
 			<input class='form-control type-message' 
 				type='search' 
-				placeholder='${__('Type message')}'
+				placeholder='${__('请输入信息')}'
 			>
 			<div>
 				<span class='message-send-button'>
