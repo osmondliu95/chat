@@ -28,8 +28,8 @@ export default class ChatWelcome {
 
     const status_text =
       this.profile.chat_status === 'Online'
-        ? __('We are online')
-        : __('We are offline');
+        ? __('当前我们在正常工作时间')
+        : __('当前我们在非工作时间');
 
     const reason_text =
       this.profile.chat_status === 'Online'
