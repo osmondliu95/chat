@@ -16,17 +16,17 @@ def validate_guest(email, full_name, message):
     if not validate_email_address(email):
         frappe.throw(
             title='Error',
-            msg=_('Invalid email address')
+            msg=_('请输入有效的电子邮箱')
         )
     if not full_name:
         frappe.throw(
             title='Error',
-            msg=_('Full Name is required')
+            msg=_('请输入姓名')
         )
     if not message:
         frappe.throw(
             title='Error',
-            msg=_('Message is too short')
+            msg=_('消息内容太短')
         )
 
     if not frappe.db.exists('Chat Profile', email):
