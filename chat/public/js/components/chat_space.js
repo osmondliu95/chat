@@ -336,7 +336,7 @@ export default class ChatSpace {
     const file_name = content.substring(n + 1) || '';
     let $sanitized_content;
 
-    if (content.startsWith('/files/') && file_name !== '') {
+    if (content.startsWith('/api/method/frappe_s3_attachment.controller.generate_file') && file_name !== '') {
       let $url;
       if (is_image(file_name)) {
         $url = $(document.createElement('img'));
